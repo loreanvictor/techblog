@@ -13,6 +13,7 @@ import { smoothLoading } from '/home/runner/work/techblog/techblog/.codedoc/node
 import { tocHighlight } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toc-highlight.js';tocHighlight();
 import { postNavSearch } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/search/post-nav/index.js';postNavSearch();
 import { zoomOnFormula } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/formula/zoom-on-formula.js';zoomOnFormula();
+import { CollapseControl } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/collapse/collapse-control.js';
 import { ToCToggle } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/toggle/index.js';
 import { DarkModeSwitch } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/darkmode/index.js';
 import { ConfigTransport } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/transport/config.js';
@@ -20,6 +21,7 @@ import { Author } from '/home/runner/work/techblog/techblog/.codedoc/components/
 import { ToCPrevNext } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
 
 const components = {
+  'wRRYUuUbpv0Nq418wsaswA==': CollapseControl,
   'Y3CwRdEdOr4c/7giJ+aw9A==': ToCToggle,
   'RvE5o2QfOK5J3QVF7Tklvg==': DarkModeSwitch,
   'Q4JLHVOQZMeIjlyFQgRaUQ==': ConfigTransport,
