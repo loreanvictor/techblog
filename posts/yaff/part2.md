@@ -135,6 +135,14 @@ The argument then goes: _HTML trees imbued with data_ are _web stuff_,
 and Javascript is in the most powerful class of languages, so we should avoid using it for
 describig HTML trees and instead use a less powerful but _powerful enough_ syntax.
 
+While the rule itself is a respectible sentiment that I personally subscribe to, it is hard to
+pin-point what does _powerful enough_ mean, at least for our use case. For example, all of the frameworks and templating
+tools described above have given up on stringently enforcing that limitation, by supporting
+custom filters and arbitrary Javascript functions.
+
+So instead of delving into such hypothetical musings of what should things be idealistically,
+lets focus on how things do work with different solutions and how does that look like in practice:
+
 
 > :Space
 
