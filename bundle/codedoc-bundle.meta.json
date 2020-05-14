@@ -96,6 +96,11 @@
       "name": "ToCPrevNext",
       "filename": "/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js",
       "hash": "Xup/U+o1wVN89aL9E/c4oQ=="
+    },
+    {
+      "name": "TabSelector",
+      "filename": "/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js",
+      "hash": "RggwrDsCQt1aKOnRM7da+w=="
     }
   ],
   "renderer": {
