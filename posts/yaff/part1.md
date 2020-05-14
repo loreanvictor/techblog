@@ -1,12 +1,20 @@
 > :Hero src=https://images.unsplash.com/photo-1518016491499-75f85ea4c86d?w=1993&h=600&fit=crop, \
-> target=desktop, leak=128px
+> target=desktop, leak=256px, mode=light
 
 > :Hero src=https://images.unsplash.com/photo-1518016491499-75f85ea4c86d?w=1200&h=600&fit=crop, \
-> target=mobile, leak=96px
+> target=mobile, leak=96px, mode=light
+
+> :Hero src=https://images.unsplash.com/photo-1536382846503-832f3d8c7742?w=1993&h=600&fit=crop, \
+> target=desktop, leak=256px, mode=dark
+
+> :Hero src=https://images.unsplash.com/photo-1536382846503-832f3d8c7742?w=1993&h=600&fit=crop, \
+> target=mobile, leak=96px, mode=dark
 
 > :PageHead lead=Yet Another Frontend Framework, shadow=0 0 8px #000000ee, color=white
 >
 > Part 1: Why?
+
+> :Space space=128px, target=desktop
 
 # TLDR;
 
@@ -302,7 +310,14 @@ the story of how it was designed and created!
 
 <br>
 
-_Hero Image by [Wendy Scofield](https://unsplash.com/@gypsycompassrose) from [Unsplash](https://unsplash.com)._
+> :DarkLight
+> > :InLight
+> >
+> > _Hero Image by [Wendy Scofield](https://unsplash.com/@gypsycompassrose) from [Unsplash](https://unsplash.com)._
+>
+> > :InDark
+> >
+> > _Hero Image by [Hafidh Satyanto](https://unsplash.com/@hafidhsatyanto) from [Unsplash](https://unsplash.com)._
 
 > :ToCPrevNext prev=false
 

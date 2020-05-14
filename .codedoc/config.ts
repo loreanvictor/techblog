@@ -7,6 +7,7 @@ import { theme } from './theme';
 import { Hero } from './components/hero';
 import { Author$ } from './components/author';
 import { Big } from './components/big';
+import { Space } from './components/space';
 import { PageHead } from './components/page-head';
 
 
@@ -54,7 +55,7 @@ export const config = /*#__PURE__*/configuration({
   markdown: {
     customComponents: {
       ...DefaultMarkdownCustomComponents,
-      Hero, Author: Author$, Big, PageHead
+      Hero, Author: Author$, Big, PageHead, Space
     },
   },
   misc: {

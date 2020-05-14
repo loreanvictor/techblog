@@ -22,9 +22,9 @@ So this is my personal blog where I talk about tech stuff I encounter. Right now
 [`coding.blog`](https://coding.blog) and [**CODEDOC**](https://codedoc.cc), and trying to push
 capabilities of JAMStack blogs to their limits.
 
-<br><br><br>
+> :Space
 
-## Yet Another Frontend Framework
+# Yet Another Frontend Framework
 
 So a while back, I was working on [CONNECT-platform](https://connect-platform.com). The web-based
 editor for connect platform is built using Angular, and I had a lot of headache optimizing it
@@ -33,17 +33,56 @@ as it got pretty confused due to the rather complicated flow of data in the edit
 
 I ended up doing more work for pushing Angular out of my way, along with the fact that explicitly
 controlling the change propagation flow simply meant a lot of the benefits of Angular were already
-gone. As a result, I decided to create _Yet Another Frontend Framework_, built around explicit
-description of flow of change.
+gone. As a result, I decided to create [_Yet Another Frontend Framework_](https://github.com/CONNECT-platform/connective-html), 
+built around explicit description of flow of change.
 
 > :Buttons
 > > :Button label=Read The Story, url=/yaff/part1
 
-<br><br><br>
+> :Space
 
-## For the Fun of It
+# A Place to Blog Coding
 
-Just for the fun of it, have this snippet of a simply frontend that gets pokemon information
+Medium was not the best place to write blogs on programming to begin with, but with the paywall-or-promote-it-yourself
+policy, it is not the place for proper coding blogs anymore.
+
+This drove me to start working on [`coding.blog`](https://coding.blog), which is a semi-centralized blog-platform
+for programming: 
+
+- You write markdown and use [an open-source stack](https://codedoc.cc) to build your blog.
+  This means you maintain full ownership of your content, can publish it anywhere, move it anytime, etc, while
+  being able to create elegant and feature-rich blogs for programming with the same convenience of Medium.
+
+- You can then publish your blog also to [`coding.blog`](https://coding.blog), which gives you a nice domain
+  `<your>.coding.blog`, and spreads the word about your writings so that you can keep focused on writing
+  quality pieces. It will also provide features for direct financial support by the community and revenue
+  sharing through curation subscriptions.
+
+<br>
+
+The blog you are reading now is (rather obviously) a `coding.blog` blog. We are scaling up our operation
+to allow everyone to seamlessly create their own coding blog, but for now you can enlist in our 
+[prospective creators list](https://coding.blog/creators) and reserve your preferred subdomain.
+
+> :Buttons
+> > :Button label=Learn More, url=https://coding.blog
+
+
+> :Space
+
+# Project CODEDOC
+
+Doing lots of open-source projects, I felt the need for a proper modern and convenient
+but extremely customizable documentation tool, so I created [**CODEDOC**](https://codedoc.cc).
+
+> :Buttons
+> > :Button label=Learn More, url=https://codedoc.cc
+
+> :Space
+
+# Pokemon Fun
+
+Just for the fun of it, have this snippet of a simple frontend that gets pokemon information
 from their name, using [**CONNECTIVE HTML**](https://github.com/CONNECT-platform/connective-html)
 and [**RxJS**](https://learnrxjs.io):
 
@@ -84,7 +123,7 @@ renderer.render(
 >
 > > :CopyButton
 
-<br><br>
+> :Space
 
 > :DarkLight
 > > :InDark
