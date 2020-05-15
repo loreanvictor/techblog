@@ -1,4 +1,5 @@
 [Home](/)
+[Error Handling in RxJS](/rxjs-error-handling)
 
 > :Collapse label=Yet Another Frontend Framework
 >
