@@ -971,7 +971,7 @@ body.dark code {
   }
   .line-0-0-20.highlight {
     color: #ffffff;
-    background: rgb(40, 46, 73);
+    background: #363062;
   }
   .line-0-0-20.selected .lineCounter-0-0-19 {
     border-color: #7187ff !important;
@@ -1000,23 +1000,23 @@ body.dark code {
     border-color: #7187ff !important;
   }
   .line-0-0-20.highlight .lineCounter-0-0-19 {
-    background: rgb(40, 46, 73);
+    background: #363062;
   }
 @media (prefers-color-scheme: dark) {
   body:not(.dark-mode-animate) .line-0-0-20.highlight {
     color: #ffffff;
-    background: rgb(28, 29, 48);
+    background: #363062;
   }
   body:not(.dark-mode-animate) .line-0-0-20.highlight .lineCounter-0-0-19 {
-    background: rgb(28, 29, 48);
+    background: #363062;
   }
 }
   body.dark .line-0-0-20.highlight {
     color: #ffffff;
-    background: rgb(28, 29, 48);
+    background: #363062;
   }
   body.dark .line-0-0-20.highlight .lineCounter-0-0-19 {
-    background: rgb(28, 29, 48);
+    background: #363062;
   }
   .wmbar-0-0-21 {
     left: 0;

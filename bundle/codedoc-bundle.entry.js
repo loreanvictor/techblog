@@ -17,8 +17,8 @@ import { ToCToggle } from '/home/runner/work/techblog/techblog/.codedoc/node_mod
 import { DarkModeSwitch } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/darkmode/index.js';
 import { ConfigTransport } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/transport/config.js';
 import { Author } from '/home/runner/work/techblog/techblog/.codedoc/components/author/index.tsx';
-import { ToCPrevNext } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
 import { TabSelector } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js';
+import { ToCPrevNext } from '/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/page/toc/prevnext/index.js';
 
 const components = {
   'wRRYUuUbpv0Nq418wsaswA==': CollapseControl,
@@ -26,8 +26,8 @@ const components = {
   'RvE5o2QfOK5J3QVF7Tklvg==': DarkModeSwitch,
   'Q4JLHVOQZMeIjlyFQgRaUQ==': ConfigTransport,
   '/hWwvsguv5skVWvFh6AQIA==': Author,
-  'Xup/U+o1wVN89aL9E/c4oQ==': ToCPrevNext,
-  'RggwrDsCQt1aKOnRM7da+w==': TabSelector
+  'RggwrDsCQt1aKOnRM7da+w==': TabSelector,
+  'Xup/U+o1wVN89aL9E/c4oQ==': ToCPrevNext
 };
 
 const renderer = getRenderer();
