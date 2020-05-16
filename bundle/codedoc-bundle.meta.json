@@ -88,14 +88,14 @@
       "hash": "Q4JLHVOQZMeIjlyFQgRaUQ=="
     },
     {
-      "name": "Author",
-      "filename": "/home/runner/work/techblog/techblog/.codedoc/components/author/index.tsx",
-      "hash": "/hWwvsguv5skVWvFh6AQIA=="
-    },
-    {
       "name": "TabSelector",
       "filename": "/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/tabs/selector.js",
       "hash": "RggwrDsCQt1aKOnRM7da+w=="
+    },
+    {
+      "name": "Author",
+      "filename": "/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/coding-blog-plugin/dist/es5/components/author/index.js",
+      "hash": "xgCwfJkntxB0D9ZowbcD2Q=="
     },
     {
       "name": "ToCPrevNext",
