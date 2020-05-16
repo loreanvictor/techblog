@@ -1,8 +1,14 @@
 > :Hero src=https://images.unsplash.com/photo-1560075370-f3a7718a5e75?w=1993&h=600&fit=crop, \
 > target=desktop, leak=256px, mode=dark
 
+> :Hero src=https://images.unsplash.com/photo-1560075370-f3a7718a5e75?w=1200&h=600&fit=crop, \
+> target=mobile, leak=96px, mode=dark
+
 > :Hero src=https://images.unsplash.com/photo-1518514491163-911fee1b725c?w=1993&h=600&fit=crop, \
 > target=desktop, leak=256px, mode=light
+
+> :Hero src=https://images.unsplash.com/photo-1518514491163-911fee1b725c?w=1200&h=600&fit=crop, \
+> target=mobile, leak=96px, mode=light
 
 > :PageHead lead=Yet Another Frontend Framework, color=white, shadow=0 0 20px black
 >
