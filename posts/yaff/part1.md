@@ -63,7 +63,7 @@ What happens here is:
 > 
 >   - This triggers React to call the `Timer()` function again. 
 > 
->   - However this time, the `useState()` function returns a different result, because React is keeping track of order what is being
+>   - However this time, the `useState()` function returns a different result, because React is keeping track of the order of what is being
 >      called by who.
 > 
 >   - A new effect is setup (and the old one is cleaned up though not precisely at this time).
@@ -91,8 +91,8 @@ In other words, `count` is a _reactive value_, i.e. its value changes in reactio
 
 # The Problem
 
-The problem with this convoluted process is sort of obvious: It is too much convoluted.
-React has to go through great lengths to mask the reactivity, as evident from this extremely
+The problem with this convoluted process is sort of obvious: Too much complexity.
+React has to go through all of this to mask the reactivity, as evident from this extremely
 simple example, causing the following issues:
 
 <br>
@@ -110,7 +110,7 @@ naturally, if the data-flow complexity grows, it can easily fail to catch up.
 <br>
 
 ## Control
-Because this process is super-convoluted, it is also pretty fragile. Which means there are a lot of stuff
+Because of the complexity of the process, it is also pretty fragile. Which means there are a lot of stuff
 that you cannot do, or you would basically broke that process.
 
 For example, run the code snippet from earlier, and you'll see React issuing this warning:
@@ -245,8 +245,8 @@ Now our rendering process becomes:
 
 Quite simple, isn't it?
 
-This simple process is not just potentially much faster (less calculations) it is,
-as a result of it simple nature, much more stable and flexible. There is no virtual DOM,
+This simple process is not just potentially much faster (less calculations), it is 
+also much more stable and flexible due to its inherent simplicity. There is no virtual DOM,
 and the component is rendered exactly once, so you can easily mess with all parts of the DOM
 without breaking anything, which in turn brings high levels of integratibility for your
 components.

@@ -325,15 +325,15 @@ It does. However:
 
 ## Separation
 
-As mentioned above, enforcing a general separation between description of the DOM tree and the logic behind
-it in a generic manner can cause more problems than it solves, as the line bet.
+As mentioned above, enforcing a _general_ separation between description of the DOM tree and the logic behind
+it can cause more problems than it solves.
 
 However, there are valid concerns about unchecked mixing of HTML tree representation and Javascript code, as it
 can lead to code that is pretty difficult to read/understand/debug (simply because there are two interwoven syntaxes
 instead of one).
 
 With **JSX**, we are _NOT_ enforcing a separation strategy, but we are also not barring it by any means.
-If anything, people can actually be much more flexible on how they separate their codes, depending on their project's
+If anything, people can actually be much more flexible on how they split their codes, depending on their project's
 needs, and how they re-use _view code_ or integrate it into _logic code_, while still benefiting from explicit
 scoping, a unified module resolution strategy, and a familiar syntax.
 

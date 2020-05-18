@@ -179,6 +179,7 @@ setTimeout(() => name.next('eevee'), 3000);       // --> eevee info is also not 
 // Result:
 // > charizard:: solar-power, blaze
 // > snorlax:: gluttony, thick-fat, immunity
+// > unknown::
 // No more logs
 ```
 
@@ -509,7 +510,7 @@ emits `'ZZZ'` once more, causing the second try.
 
 <br>
 
-Alternatively, we could keep using `retry()` and make name a `Subject` instead of a `BehaviorSubject`. 
+Alternatively, we could keep using `retry()` and make `name` a `Subject` instead of a `BehaviorSubject`. 
 In that case, it would emit each value _only once_ and _to subscriptions present at the time_,
 so when we re-subscribe to it after an error, we won't get the problematic value again:
 
