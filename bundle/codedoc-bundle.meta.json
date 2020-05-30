@@ -11,6 +11,11 @@
       "hash": "/POqFHLKqbHntChYlGioLw=="
     },
     {
+      "name": "countCards",
+      "filename": "/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/coding-blog-plugin/dist/es5/components/article-card/count-cards.js",
+      "hash": "ksJSLmpesSd0tPkYeLkwvQ=="
+    },
+    {
       "name": "codeSelection",
       "filename": "/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/core/dist/es6/components/code/selection.js",
       "hash": "oii2uzxC+y6qdm99CNRX6g=="
@@ -91,6 +96,11 @@
       "name": "Author",
       "filename": "/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/coding-blog-plugin/dist/es5/components/author/index.js",
       "hash": "xgCwfJkntxB0D9ZowbcD2Q=="
+    },
+    {
+      "name": "ArticleCard",
+      "filename": "/home/runner/work/techblog/techblog/.codedoc/node_modules/@codedoc/coding-blog-plugin/dist/es5/components/article-card/index.js",
+      "hash": "GtM0qC4Maqb25jkJ2kxChA=="
     },
     {
       "name": "TabSelector",
