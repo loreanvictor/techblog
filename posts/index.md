@@ -10,7 +10,7 @@
 > :Hero src=https://images.unsplash.com/photo-1544133065-4c9fe678b4dd?w=1200&h=600&fit=crop&q=80, \
 > target=mobile, mode=light, leak=96px
 
-> :PageHead color=white
+> :Title color=white, shadow=0 0 12px black
 >
 > Eugene's Coding Blog
 
@@ -36,8 +36,9 @@ controlling the change propagation flow simply meant a lot of the benefits of An
 gone. As a result, I decided to create [_Yet Another Frontend Framework_](https://github.com/CONNECT-platform/connective-html), 
 built around explicit description of flow of change.
 
-> :Buttons
-> > :Button label=Read The Story, url=/yaff/part1
+> :ArticleCard src=/yaff/part1, style=box
+
+> :ArticleCard src=/yaff/part2, style=box
 
 > :Space
 

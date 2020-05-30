@@ -10,7 +10,7 @@
 > :Hero src=https://images.unsplash.com/photo-1518514491163-911fee1b725c?w=1200&h=600&fit=crop, \
 > target=mobile, leak=96px, mode=light
 
-> :PageHead lead=Yet Another Frontend Framework, color=white, shadow=0 0 20px black
+> :Title lead=Yet Another Frontend Framework, color=white, shadow=0 0 20px black
 >
 > Part 2: JSX
 
@@ -22,7 +22,7 @@ So in [part 1](/yaff/part1), I described why I decided to embark on coding _yet 
 If you haven't checked it out, I highly recommend reading it first, as it outlines our goals for
 this (and subsequent parts).
 
-> :ToCPrevNext next=false
+> :ArticleCard src=/yaff/part1
 
 ---
 

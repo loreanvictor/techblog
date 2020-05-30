@@ -10,7 +10,7 @@
 > :Hero src=https://images.unsplash.com/photo-1574334292321-4844f63aefef?w=1200&h=600&fit=crop, \
 > target=mobile, leak=96px, mode=light
 
-> :PageHead shadow=none
+> :Title shadow=none
 >
 > Error Handling in RxJS
 

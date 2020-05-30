@@ -10,7 +10,7 @@
 > :Hero src=https://images.unsplash.com/photo-1536382846503-832f3d8c7742?w=1993&h=600&fit=crop, \
 > target=mobile, leak=96px, mode=dark
 
-> :PageHead lead=Yet Another Frontend Framework, shadow=0 0 8px #000000ee, color=white
+> :Title lead=Yet Another Frontend Framework, shadow=0 0 8px #000000ee, color=white
 >
 > Part 1: Why?
 
