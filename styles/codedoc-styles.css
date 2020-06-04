@@ -147,9 +147,9 @@ a.button-0-0-2.icon {
   .watermark-0-0-4 {
     color: #424242;
     cursor: pointer;
-    display: inline-block;
+    display: block;
     opacity: 0.2;
-    font-size: 8px;
+    font-size: 1px;
     transition: opacity .15s;
     text-decoration: none !important;
   }
@@ -169,9 +169,8 @@ a.button-0-0-2.icon {
     color: #eeeeee;
   }
   .watermark-0-0-4 svg {
-    width: 2.8rem;
-    display: block;
-    margin-top: .25rem;
+    height: 2rem;
+    margin: .25rem 0;
   }
   .watermark-0-0-4 svg g {
     fill: #424242;
