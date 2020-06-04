@@ -22,6 +22,14 @@ So this is my personal blog where I talk about tech stuff I encounter. Right now
 [`coding.blog`](https://coding.blog) and [**CODEDOC**](https://codedoc.cc), and trying to push
 capabilities of JAMStack blogs to their limits.
 
+<br>
+
+# Latest Posts
+
+> :ArticleCard src=/why-medium-doesnt-work-for-programmers, style=box
+
+> :ArticleCard src=/rxjs-error-handling, style=box
+
 > :Space
 
 # Yet Another Frontend Framework
@@ -36,9 +44,11 @@ controlling the change propagation flow simply meant a lot of the benefits of An
 gone. As a result, I decided to create [_Yet Another Frontend Framework_](https://github.com/CONNECT-platform/connective-html), 
 built around explicit description of flow of change.
 
-> :ArticleCard src=/yaff/part1, style=box
+<br>
 
-> :ArticleCard src=/yaff/part2, style=box
+> :ArticleCard src=/yaff/part1
+
+> :ArticleCard src=/yaff/part2
 
 > :Space
 

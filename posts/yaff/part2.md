@@ -496,6 +496,10 @@ _Hero Image by [Zbysiu Rodak](https://unsplash.com/@zbigniew) from [Unsplash](ht
 >
 > Templating vs JSX, which one is the best option for our frontend framework?
 
+> :MetaOverride property=og:title
+>
+> Part 2: JSX
+
 > :MetaOverride target=keywords, behavior=extend
 >
 > React, Angular, Vue.js, Svelte, Nunjucks, Templates, JSX, Templating, Frontend, Javascript, TypeScript
