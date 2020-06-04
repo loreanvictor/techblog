@@ -72,7 +72,7 @@ and now-a-days there are a wide variety of tools at disposal of programmers of a
 setup their personal blogs quickly and painlessly.
 
 Even for hosting, since you can freely host your blog on services such as GitHub Pages, you literally can just
-[fork this repository and setup your blog](https://github.com/CONNECT-platform/coding-blog-boilerplate/fork)
+[use this template and setup your blog](https://github.com/CONNECT-platform/coding-blog-boilerplate/generate)
 in about the same time it would take you to create a Medium account and verify your email.
 
 ---
