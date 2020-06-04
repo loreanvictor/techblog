@@ -1,14 +1,14 @@
-> :Hero src=https://images.unsplash.com/photo-1528141603775-81fd11f61682?w=1993&h=600&fit=crop&q=80, \
-> target=desktop, leak=188px, mode=dark
-
-> :Hero src=https://images.unsplash.com/photo-1528141603775-81fd11f61682?w=1200&h=600&fit=crop&q=80, \
-> target=mobile, leak=144px, mode=dark
-
 > :Hero src=https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?w=1993&h=600&fit=crop&crop=bottom, \
 > target=desktop, leak=188px, mode=light
 
 > :Hero src=https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?w=1200&h=600&fit=crop&crop=bottom, \
 > target=mobile, leak=144px, mode=light
+
+> :Hero src=https://images.unsplash.com/photo-1528141603775-81fd11f61682?w=1993&h=600&fit=crop&q=80, \
+> target=desktop, leak=188px, mode=dark
+
+> :Hero src=https://images.unsplash.com/photo-1528141603775-81fd11f61682?w=1200&h=600&fit=crop&q=80, \
+> target=mobile, leak=144px, mode=dark
 
 > :Title shadow=0 0 6px #0000009e, color=white
 >
