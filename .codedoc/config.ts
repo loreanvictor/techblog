@@ -22,13 +22,6 @@ export const config = /*#__PURE__*/configuration({
       base: 'Eugene\'s Coding Blog'
     },
     favicon: '/favicon.ico',
-    fonts: {
-      text: {
-        url: 'https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap',
-        name: 'Oxanium',
-        fallback: 'cursive',
-      }
-    },
     meta: {
       subject: 'The Coding Blog of Eugene Ghanizadeh Khoub',
       description: 'The Coding Blog of Eugene Ghanizadeh Khoub',
