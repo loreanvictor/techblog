@@ -1,11 +1,11 @@
 > :Hero src=https://images.unsplash.com/photo-1480506132288-68f7705954bd?w=1993&h=600&fit=crop&q=80, \
-> target=desktop, mode=dark, leak=188px
+> target=desktop, mode=dark, leak=208px
 
 > :Hero src=https://images.unsplash.com/photo-1480506132288-68f7705954bd?w=1200&h=600&fit=crop&q=80, \
 > target=mobile, mode=dark, leak=96px
 
 > :Hero src=https://images.unsplash.com/photo-1544133065-4c9fe678b4dd?w=1993&h=600&fit=crop&q=80, \
-> target=desktop, mode=light, leak=188px
+> target=desktop, mode=light, leak=208px
 
 > :Hero src=https://images.unsplash.com/photo-1544133065-4c9fe678b4dd?w=1200&h=600&fit=crop&q=80, \
 > target=mobile, mode=light, leak=96px
