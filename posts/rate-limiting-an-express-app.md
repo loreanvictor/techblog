@@ -10,10 +10,10 @@
 
 > :Space
 
-Imagine you have an API with multiple end-points written in NodeJS and using Express. And you
+Imagine we have an API with multiple end-points written in NodeJS and using Express. And we
 want to implement a rate limit on this API for each user (pretty common for any API).
 
-The general code-structure of that would look like this:
+The general code-structure of that would look like something this:
 
 ```ts
 import * as express from 'express';
@@ -63,7 +63,7 @@ const router = express.Router();
 export default router;
 ```
 
-This already looks a bit hacky, since there is a global variable that is being updated by a middleware function. We could of-course
+This looks a bit hacky, since there is a global variable that is being updated by a middleware function. We could of-course
 clean this up a bit by writing a custom middleware function:
 
 
@@ -105,11 +105,11 @@ clean this up a bit by writing a custom middleware function:
 <br>
 
 Now this seems much neater, but what we have implemented is a _global rate limit for anyone accessing the API_.
-In other words, if Bob access the API, then Alice cannot access it for 10 seconds as well.
+In other words, if Bob access the API, then Alice cannot access it for 10 seconds after that as well.
 
 To fix that, we would need to authenticate the user making each request, and for simplicity lets assume
 we have an `authenticate()` function that does exactly that job for us. Also let's assume that
-`authenticate()` basically populates `req._.user`, which has an id, etc.
+`authenticate()` basically populates `req._.user`, which has an id, `req._.user.id`.
 
 Now our code would look like this:
 
@@ -154,8 +154,9 @@ Now our code would look like this:
 
 Besides still not being neat, we still have the issue that our `rateLimit()` middleware requires
 another authentication middleware that does populate `req._.user` object. Brushing off that, it has a more pressing
-practicual issue: the `last` object that the middleware creates only grows in time, means that our memory
-consumption is strictly increasing over time.
+and practical problem: the `last` object that the middleware creates is never cleaned up. There is an entry there for every
+user that accesses the system, and without a cleanup mechanism it would keep growing in size, leading
+to potential memory issues (or at least, over-usage).
 
 To fix that, we could restructure our middleware to maintain a lock for each user and release it after a while:
 
@@ -179,32 +180,33 @@ Now our solution works (and our middleware is also pretty small), but it has the
 - Our middleware is not generic, as it is bound to the middlewares before that to set some identifier
   on each request,
 - Our middleware code looks weird and it is not obvious what it does on the first look. A simple thing
-  like rate-limiting surely should be done in a much simpler manner.
+  like rate-limiting surely should be done in a simpler manner.
 
 ---
 
 # Stream-Based Solution
 
-The main reason our approach seems to bare the aforementioned issues is that we are looking at one request
-at a time, and using the middleware's closure (i.e. `lock` or `last`) as an in-mem way of communicating
-between those times when we are making a decision for each request.
+The main reason our approach bears those issues is that we are looking at one request
+at a time, using the middleware's closure (i.e. `lock` or `last`) as an in-mem way of communicating
+between those instances when we are making a decision for each request.
 
-The nature of our goal (rate limiting per user) however has more to do with streams of request than each single
-request. What we want to do is:
+The nature of rate limiting however has more to do with streams of request than each single
+request (it is a limit on the stream, not each single request). What we want to do is:
 
 > - Do an authentication on each incoming request (as before)
-> - Break the incoming stream of requests per user
-> - Throttle each stream by a certain duration (10 seconds)
+> - Split the incoming stream of requests per user
+> - Throttle each user-request stream by a certain duration (10 seconds)
 
-That seems extremely simply, but Express is based on handling one request at a time and not working
-with streams of requests, so unfortunately we cannot have a code as neat as this simple description.
+That seems simple enough, but to achieve it we would need to be able to work with
+streams of requests. Express is however based on handling one request at a time (via a callback), 
+so unfortunately we cannot have a code as neat as this simple description.
 
 Or can't we?
 
-Well, there is this neat library for working with streams called [RxJS](https://www.learnrxjs.io/) out
-there. And there is a nice little library that creates a request stream for us based on Express's routers,
-called [RxXpress](https://loreanvictor.github.io/rxxpress/). Combining the two, our rate limiting could look
-more like this:
+Well, there is this neat library for working with streams called [RxJS](https://www.learnrxjs.io/). 
+And there is a nice little library that creates a request stream for us based on Express's routers,
+called [RxXpress](https://loreanvictor.github.io/rxxpress/). Combining the two, our rate limiting code
+becomes something like this:
 
 ```ts
 import { Router, next } from 'rxxpress';
@@ -239,7 +241,7 @@ to unpack in one go. So lets break it down a bit:
 
 Basically with the [RxXpress router](https://loreanvictor.github.io/rxxpress/router), 
 each route is a stream of requests instead of a function accepting a callback.
-Here we are basically saying I want the stream of all requests (all methods, any path), and want to pipe it to some
+Here we are basically saying that we want the stream of all requests (all methods, any path), and want to pipe it to some
 operators (each operator is simply a function that is applied on the stream, pretty similar to piping shell commands),
 and then subscribe to it (so we get those requests).
 
@@ -279,18 +281,18 @@ router.all('*').pipe(
 )
 ```
 
-Ok this is a two-parter, first look at the inner part:
+Ok this is a two-parter, so lets first look at the inner part:
 
 ```ts
 group => group.pipe(throttleTime(10000))
 ```
 
-Remember how `groupBy()` split our stream? Each split stream ends up here, as the `group` variable. Each stream
+Remember how `groupBy()` split our stream? Each split stream ends up here, in the `group` variable. Each stream
 is the stream of requests by each user, and we wanted to throttle it 10 seconds, so here is where
-[`throttleTime()`](https://www.learnrxjs.io/learn-rxjs/operators/filtering/throttletime) operator comes to play.
+[`throttleTime()`](https://www.learnrxjs.io/learn-rxjs/operators/filtering/throttletime) operator becomes useful.
 It simply passes on the first emission and drops the rest until given time is passed.
 
-Now for the second part: 
+Now for the outer part: 
 
 ```ts
 router.all('*').pipe(
@@ -301,9 +303,9 @@ router.all('*').pipe(
 ```
 
 well the rest of our code doesn't need to be aware that we have split the original
-stream of requests to different streams based on user, so we need to _merge_ those streams after throttling them
-individually again. That is where [`mergeMap()`](https://www.learnrxjs.io/learn-rxjs/operators/transformation/mergemap)
-comes into play, as it simply merges all those streams into a single stream of requests again.
+stream of requests into separate per-user streams, so we need to _merge_ those streams after throttling them
+individually. That is where [`mergeMap()`](https://www.learnrxjs.io/learn-rxjs/operators/transformation/mergemap)
+comes into play, as it merges all those streams into a single stream of requests again.
 
 <br>
 
@@ -386,11 +388,10 @@ streams, which is not familiar for us programmers as most of our experience is w
 that we think imparatively about, i.e. in terms of instructions that are executed one after
 another.
 
-This different paradigm of course becomes a serious barrier for a lot of people, so a lot might
-actually prefer the naive solution to the stream-based one. _And that is OK_. However,
-I hope seeing whats on the other side of that barrier might encourage you to try to overcome
-it and embrace the reactive nature of most of what we, as web developers, do, instead of shying
-away from it.
+This different paradigm of course becomes a serious barrier of entry for a lot of people, 
+causing them to actually prefer the naive solution to the stream-based one. _And that is OK_. However,
+I hope seeing whats on the other side of that barrier encourages you to try to overcome
+that barrier and enjoy the elegance of streams and reactive programming.
 
 ---
 
