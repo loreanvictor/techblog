@@ -52,7 +52,7 @@ const router = express.Router();
 /*!*/    lastReq = now;                            // --> update time of last request
 /*!*/    next();                                   // --> pass to next handler (rest of the API)
 /*!*/  } else {
-/*!*/    res.status(400).send();                   // --> otherwise, timeout
+/*!*/    res.status(429).send();                   // --> otherwise, timeout
 /*!*/  }
 /*!*/});
 
@@ -79,7 +79,7 @@ clean this up a bit by writing a custom middleware function:
 > >      last = now;
 > >      next();
 > >    } else {
-> >      res.status(400).send();
+> >      res.status(429).send();
 > >    }
 > >  }
 > >}
@@ -128,7 +128,7 @@ Now our code would look like this:
 > >      last[req._.user.id] = now;                       // --> update user's timestamp
 > >      next();                                          // --> handle user's request
 > >    } else {
-> >      res.status(400).send();                          // --> otherwise, timeout
+> >      res.status(429).send();                          // --> otherwise, timeout
 > >    }
 > >  }
 > >}
@@ -165,7 +165,7 @@ export function rateLimit(duration) {
   const lock = {};
   return (req, res, next) => {
     if (req._.user.id in lock) {
-      res.status(400).send();
+      res.status(429).send();
     } else {
       next();
       lock[req._.user.id] = true;
