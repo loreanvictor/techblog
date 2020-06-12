@@ -1,11 +1,15 @@
 > :Hero src=https://images.unsplash.com/photo-1587642303371-96accbf47448?w=1993&h=600&fit=crop&crop=bottom, \
 > target=desktop, leak=256px
 
-> :Title color=white
->
-> Diversity is NOT a progressive value. Its a rational one.
+> :Hero src=https://images.unsplash.com/photo-1587642303371-96accbf47448?w=1993&h=1200&fit=crop&crop=bottom, \
+> target=mobile, leak=188px
 
-> :Space
+> :Title color=white, size=42px, shadow=0 0 6px black
+>
+> Diversity is NOT a progressive value. \
+> Its a rational one.
+
+> :Space target=desktop
 
 A few years back, I was a product manager of a team that has grown too large for remaining sustainably agile.
 I was trying to break that team into two independent teams (in the same company), each with its own product manager.
