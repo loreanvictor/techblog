@@ -26,6 +26,8 @@ capabilities of JAMStack blogs to their limits.
 
 # Latest Posts
 
+> :ArticleCard src=/diversity-is-not-a-progressive-value, style=box
+
 > :ArticleCard src=/why-medium-doesnt-work-for-programmers, style=box
 
 > :ArticleCard src=/rate-limiting-an-express-app, style=box
