@@ -193,7 +193,7 @@ between those instances when we are making a decision for each request.
 The nature of rate limiting however has more to do with streams of request than each single
 request (it is a limit on the stream, not each single request). What we want to do is:
 
-> - Do an authentication on each incoming request (as before)
+> - Do authentication on each incoming request (as before)
 > - Split the incoming stream of requests per user
 > - Throttle each user-request stream by a certain duration (10 seconds)
 
@@ -270,6 +270,12 @@ router.all('*').pipe(
 The [`groupBy`](https://www.learnrxjs.io/learn-rxjs/operators/transformation/groupby) operator splits our initial
 stream of our requests based on each user. The end result is a _stream of streams_, i.e. a _master stream_, which emits
 _user request streams_ (a stream of requests by that user).
+
+> We are glossing over some details of `groupBy()` operator here.
+> You can checkout the following piece for more details on how to use `groupBy()` in
+> such a situation effectively:
+>
+> > :ArticleCard src=/rxjs-group-by
 
 <br>
 

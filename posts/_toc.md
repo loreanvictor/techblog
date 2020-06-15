@@ -4,6 +4,7 @@
 >
 > [Error Handling in RxJS](/rxjs-error-handling)
 > [Rate Limiting an Express App](/rate-limiting-an-express-app)
+> [How RxJS `groupBy()` Works](/rxjs-group-by)
 
 > :Collapse label=Yet Another Frontend Framework
 >

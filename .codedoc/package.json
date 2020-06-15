@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@codedoc/coding-blog-plugin": "^0.1.3",
-    "@codedoc/core": "^0.2.1"
+    "@codedoc/coding-blog-plugin": "^0.1.6",
+    "@codedoc/core": "^0.2.3"
   }
 }
