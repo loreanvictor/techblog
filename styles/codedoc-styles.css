@@ -55,6 +55,11 @@ body.dark .darklight-0-0-1>.dark {
     font-size: 24px;
     min-width: 0;
   }
+  .button-0-0-2[disabled] {
+    color: #f1e7dc;
+    border: rgba(66, 66, 66, 0.35);
+    background: rgba(66, 66, 66, 0.35);
+  }
   body.dark .button-0-0-2 {
     color: black;
     background: #ffdcb4;
@@ -66,22 +71,32 @@ body.dark .darklight-0-0-1>.dark {
     background: #ffdcb4;
     border-color: #ffdcb4;
   }
+  body:not(.dark-mode-animate) .button-0-0-2[disabled] {
+    color: #202040;
+    border: rgba(238, 238, 238, 0.35);
+    background: rgba(238, 238, 238, 0.35);
+  }
 }
-  .button-0-0-2:hover {
+  .button-0-0-2:hover:not([disabled]) {
     color: #202040;
     background: transparent;
     text-decoration: none;
   }
-  body.dark .button-0-0-2:hover {
+  body.dark .button-0-0-2:hover:not([disabled]) {
     color: #ffdcb4;
     background: transparent;
   }
 @media (prefers-color-scheme: dark) {
-  body:not(.dark-mode-animate) .button-0-0-2:hover {
+  body:not(.dark-mode-animate) .button-0-0-2:hover:not([disabled]) {
     color: #ffdcb4;
     background: transparent;
   }
 }
+  body.dark .button-0-0-2[disabled] {
+    color: #202040;
+    border: rgba(238, 238, 238, 0.35);
+    background: rgba(238, 238, 238, 0.35);
+  }
 a.button-0-0-2 {
   height: 28px;
 }
