@@ -32,7 +32,7 @@ capabilities of JAMStack blogs to their limits.
 
 > :ArticleCard src=/rate-limiting-an-express-app, style=box
 
-> :ArticleCard src=/rxjs-error-handling, style=box
+> :ArticleCard src=/rxjs-group-by, style=box
 
 > :Space
 
