@@ -12,7 +12,7 @@
 
 > :Space
 
-When working with streams of data, sometimes you want to group incoming data
+When working with streams of data, its often useful to group incoming data
 from a particular stream, lets call it the _main stream_. For example,
 imagine our _main stream_ is a stream of incoming HTTP requests:
 
@@ -28,14 +28,13 @@ const router = new Router();          // --> this is an HTTP router that gives u
 export default router.core;
 ```
 
-If you are not familiar with [RxXpress](https://loreanvictor.github.io/rxxpress/), its a library quite
+> If you are not familiar with [RxXpress](https://loreanvictor.github.io/rxxpress/), its a library quite
 like [Express](https://expressjs.com/) for handling incoming HTTP requests (it even works with Express
 under the hood and [integrates neatly with Express](https://loreanvictor.github.io/rxxpress/#inter-operability)).
 In Express, you register a callback for each route, looking at one request at a time. In RxXpress however,
 you get a _stream of requests_ for each route instead, in form of an [RxJS Observable](https://rxjs.dev/guide/observable).
 
-This allows us to manipulate the stream itself instead of dancing around with one request at a time.
-For example, we can authenticate incoming requests, and then group them based on the user making the request:
+We can, for example, authenticate incoming requests, and then group them based on the user making the request:
 
 ```ts
 import { Router, use } from 'rxxpress';    // @see [RxXpress](https://loreanvictor.github.io/rxxpress/)
@@ -54,8 +53,9 @@ export default router.core;
 ```
 
 For this example, we have assumed that `authenticate()` is a typical Express middleware, authenticating
-each request and populating `req._.user`. This line simply allows us to use an Express middleware on a stream
-of requests:
+each request and populating `req._.user`. 
+
+This line simply allows us to use an Express middleware on a stream of requests:
 
 ```ts
   use(authenticate)
@@ -67,16 +67,21 @@ And this line allows us to group incoming requests based on the user making the 
   groupBy(({req}) => req._.user.id)
 ```
 
-Our _main stream_ is now split into multiple _user request streams_, each being the stream of requests by a particular user.
+Our _main stream_ is now split into multiple _user request streams_ (or _sub-streams_), each being the stream of requests by a particular user.
 
-How many streams do we need? That is not determinable, and it will even change over time. For each new user, i.e. a user
-who is making their first request, we would need a new _user request stream_, while we need requests from returning users,
-i.e. users who have already made at least one request before, to be channeled into their corresponding _user request stream_.
+How does this work exactly? Well: 
+- For requests from new users, i.e. users making their first request, we would get a new _user request stream_
+- Requests from returning users, i.e. users who have already made at least one request before, will be channeled into their corresponding _user request stream_.
 
-Due to this dynamic nature of stream-splitting, `groupBy()` operator basically turns our _main stream_ from a _stream of requests_
-to a _stream of streams_, to be more precisely a _stream of user request streams_. For each new user, it will create a new
-_user request stream_ and emit that stream, channeling the request to that stream. For returning users, it will not emit anything,
-it will just channel their requests to their corresponding _user request stream_.
+This means it is not clear how many _user request stream_ or _sub-stream_ we will have in the end. We need to deal with an
+unknown number of _sub-streams_, which will arrive at unknown points in time.
+
+Fortunately, there is a nice abstraction for _unknown number of X arriving at unknown points in time_. For example, if we had
+unknown number of _HTTP requests_, arriving at unknown points in time, we could simply represent it with a _stream of HTTP requests_. Now that
+we have an unknown number of _sub-streams_ arriving at unknown points in time, we can represnt it with a _stream of sub-streams_, 
+or in our case a _stream of user request streams_.
+
+And that is what `groupBy()` does exactly: it turns our _main stream_ into a _stream of sub-streams_!
 
 ---
 
@@ -108,9 +113,10 @@ like this:
 > GroupedObservable ...
 ```
 
-Each of these are being logged one second after another, and after the third log you have no further logs. Basically,
-when 0 is emitted, the first _sub-stream_ is created, emitted and subsequently logged (as the `GroupedObservable`),
-and the same thing happens for 1 and 2. However, when 4 is emitted, since `3 % 3 === 0 % 3`, then the first
+Each of these are being logged one second after another, and after the third log you have no further logs. Basically:
+- when 0 is emitted, the first _sub-stream_ is created, emitted and subsequently logged (as the `GroupedObservable`),
+- the same thing happens for 1 and 2. 
+- However, when 3 is emitted, since `3 % 3 === 0 % 3`, then the first
 _sub-stream_ is used again, instead of creating a new stream, and so nothing more is logged.
 
 Now if we wanted to get the numbers logged, paired with their group, we could for example
@@ -150,7 +156,7 @@ Running this code would yield something like this:
 ...
 ```
 
-Note how we used `group.key` to identify each group. This is the same value that identifies data of each group,
+> Notice how `group.key` is used to identify each group. This is the same value that identifies data of each group,
 i.e. the result of `x => x % 3`.
 
 The cool part of RxJS is that it also allows us to merge these split streams back into one stream.
@@ -213,10 +219,15 @@ const router = new Router();
 export default router.core;
 ```
 
-In this example, the `next()` operator simply passes requests that are yet to be responded to
+> In this example, the `next()` operator simply passes requests that are yet to be responded to
 to the next request handler (it is similar to calling `next()` inside an Express middleware).
-We are basically splitting the stream per user, throttling each _sub-stream_ 10 seconds,
-then merging them back and letting someone else handle the rest. In effect, this code describes
+
+We are basically: 
+- splitting the stream per user, 
+- throttling each _sub-stream_ 10 seconds,
+- then merging them back and letting someone else handle the rest.
+
+In effect, this code describes
 a nice _per-user rate-limiting_ middleware that can be mounted on any Express router / app.
 
 The issue here is that, if there is a _sub-stream_ created for each user, slowly but surely
@@ -249,9 +260,10 @@ router.all('*').pipe(                                   // --> the request strea
 export default router.core;
 ```
 
-The _duration selector_ works like this: When a group is created, the provided function is called,
-and it is expected to return an observable. When that observable emits its first value, then the _sub-stream_
-(or the _group_) is disposed, and when a new emission comes from the _main stream_ that would have belonged
+This is how the _duration selector_ works:
+- When a group is created, the provided function is called, and it is expected to return an observable. 
+- When that observable emits its first value, then the _sub-stream_ (or the _group_) is cleared out,
+- When a new emission comes from the _main stream_ that would have belonged
 to that particular _sub-stream_, a new _sub-stream_ is created.
 
 To see that in action, take a look at this example:
