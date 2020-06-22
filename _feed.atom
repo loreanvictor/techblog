@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://eugene.coding.blog/techblog</id>
     <title>Eugene's Coding Blog</title>
-    <updated>2020-06-22T20:08:28.540Z</updated>
+    <updated>2020-06-22T20:12:27.993Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://eugene.coding.blog/techblog"/>
     <link rel="self" href="https://eugene.coding.blog/_feed.atom"/>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Eugene's Coding Blog]]></title>
         <id>https://eugene.coding.blog/techblog/404</id>
         <link href="https://eugene.coding.blog/techblog/404"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[The Coding Blog of Eugene Ghanizadeh Khoub]]></summary>
         <content type="html"><![CDATA[ ...]]></content>
         <author>
@@ -19,13 +19,13 @@
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eugene's Coding Blog | Diversity is NOT a progressive value. Its a rational one.]]></title>
         <id>https://eugene.coding.blog/techblog/diversity-is-not-a-progressive-value</id>
         <link href="https://eugene.coding.blog/techblog/diversity-is-not-a-progressive-value"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[Diversity is portrayed as a progressive value, as if it is something that requires good intentions
 to be promoted. It is not. A lack of it, however, is merely stupid and short-sighted.]]></summary>
         <content type="html"><![CDATA[Diversity is NOT a progressive value. Its a rational one. ...]]></content>
@@ -34,13 +34,13 @@ to be promoted. It is not. A lack of it, however, is merely stupid and short-sig
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eugene's Coding Blog | Eugene's Coding Blog]]></title>
         <id>https://eugene.coding.blog/techblog/index</id>
         <link href="https://eugene.coding.blog/techblog/index"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[The Coding Blog of Eugene Ghanizadeh Khoub]]></summary>
         <content type="html"><![CDATA[Eugene's Coding Blog ...]]></content>
         <author>
@@ -48,13 +48,13 @@ to be promoted. It is not. A lack of it, however, is merely stupid and short-sig
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eugene's Coding Blog | Rate Limiting An Express App]]></title>
         <id>https://eugene.coding.blog/techblog/rate-limiting-an-express-app</id>
         <link href="https://eugene.coding.blog/techblog/rate-limiting-an-express-app"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[How to conduct a per-user rate limit on an Express-powered API? Well there is a naive solution, and there
 is a more elegant one which requires thinking in streams and reactive programming.]]></summary>
         <content type="html"><![CDATA[Rate Limiting An Express App ...]]></content>
@@ -63,13 +63,13 @@ is a more elegant one which requires thinking in streams and reactive programmin
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eugene's Coding Blog | Error Handling in RxJS]]></title>
         <id>https://eugene.coding.blog/techblog/rxjs-error-handling</id>
         <link href="https://eugene.coding.blog/techblog/rxjs-error-handling"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[A deep-dive in error-handling in RxJS, its solutions, pitfalls, etc.]]></summary>
         <content type="html"><![CDATA[Error Handling in RxJS ...]]></content>
         <author>
@@ -77,13 +77,13 @@ is a more elegant one which requires thinking in streams and reactive programmin
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eugene's Coding Blog | How RxJS groupBy() Works]]></title>
         <id>https://eugene.coding.blog/techblog/rxjs-group-by</id>
         <link href="https://eugene.coding.blog/techblog/rxjs-group-by"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[RxJS groupBy() operator is a useful but nuanced tool. In last post we used it to
 easily and descriptively rate-limit an API, here we will dig more into its specification
 in the context of same example.]]></summary>
@@ -93,13 +93,13 @@ in the context of same example.]]></summary>
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Eugene's Coding Blog | Why Medium Doesn't Work for Programmers]]></title>
         <id>https://eugene.coding.blog/techblog/why-medium-doesnt-work-for-programmers</id>
         <link href="https://eugene.coding.blog/techblog/why-medium-doesnt-work-for-programmers"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[Why Medium isn't a proper place for programming blogs and articles anymore.]]></summary>
         <content type="html"><![CDATA[Why Medium Doesn't Work for Programmers ...]]></content>
         <author>
@@ -107,13 +107,13 @@ in the context of same example.]]></summary>
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Part 1: Why?]]></title>
         <id>https://eugene.coding.blog/techblog/yaff/part1</id>
         <link href="https://eugene.coding.blog/techblog/yaff/part1"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[Short-comings of React and other frontend frameworks, i.e. why CONNECTIVE HTML was created.]]></summary>
         <content type="html"><![CDATA[Part 1: Why? ...]]></content>
         <author>
@@ -121,13 +121,13 @@ in the context of same example.]]></summary>
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Part 2: JSX]]></title>
         <id>https://eugene.coding.blog/techblog/yaff/part2</id>
         <link href="https://eugene.coding.blog/techblog/yaff/part2"/>
-        <updated>2020-06-22T20:06:58.000Z</updated>
+        <updated>2020-06-22T20:11:06.000Z</updated>
         <summary type="html"><![CDATA[Templating vs JSX, which one is the best option for our frontend framework?]]></summary>
         <content type="html"><![CDATA[Part 2: JSX ...]]></content>
         <author>
@@ -135,6 +135,6 @@ in the context of same example.]]></summary>
             <email>ghanizadeh.eugene@gmail.com</email>
             <uri/>
         </author>
-        <published>2020-06-22T20:06:58.000Z</published>
+        <published>2020-06-22T20:11:06.000Z</published>
     </entry>
 </feed>
