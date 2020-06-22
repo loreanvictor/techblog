@@ -44,7 +44,10 @@ export const config = /*#__PURE__*/configuration({
       assets: [
         'favicon.ico',
         'img'
-      ]
+      ],
+      feed: {
+        url: 'https://eugene.coding.blog'
+      },
     })
   ],
   misc: {
