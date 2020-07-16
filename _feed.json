@@ -5,39 +5,14 @@
     "feed_url": "https://eugene.coding.blog/_feed.json",
     "items": [
         {
-            "id": "https://eugene.coding.blog/techblog/404",
-            "content_html": " ...",
-            "url": "https://eugene.coding.blog/techblog/404",
-            "title": "Eugene's Coding Blog",
-            "summary": "The Coding Blog of Eugene Ghanizadeh Khoub",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
-            "author": {
-                "name": "Eugene Ghanizadeh Khoub"
-            }
-        },
-        {
-            "id": "https://eugene.coding.blog/techblog/index",
-            "content_html": "Eugene's Coding Blog ...",
-            "url": "https://eugene.coding.blog/techblog/index",
-            "title": "Eugene's Coding Blog | Eugene's Coding Blog",
-            "summary": "The Coding Blog of Eugene Ghanizadeh Khoub",
-            "image": "https://images.unsplash.com/photo-1480506132288-68f7705954bd?w=1993&h=600&fit=crop&q=80",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
-            "author": {
-                "name": "Eugene Ghanizadeh Khoub"
-            }
-        },
-        {
             "id": "https://eugene.coding.blog/techblog/diversity-is-not-a-progressive-value",
             "content_html": "Diversity is NOT a progressive value. Its a rational one. ...",
             "url": "https://eugene.coding.blog/techblog/diversity-is-not-a-progressive-value",
             "title": "Eugene's Coding Blog | Diversity is NOT a progressive value. Its a rational one.",
             "summary": "Diversity is portrayed as a progressive value, as if it is something that requires good intentions\nto be promoted. It is not. A lack of it, however, is merely stupid and short-sighted.",
             "image": "https://images.unsplash.com/photo-1587642303371-96accbf47448?w=1993&h=600&fit=crop&crop=bottom",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
+            "date_modified": "2020-07-16T19:57:02.000Z",
+            "date_published": "2020-07-16T19:57:02.000Z",
             "author": {
                 "name": "Eugene Ghanizadeh Khoub"
             }
@@ -49,8 +24,8 @@
             "title": "Eugene's Coding Blog | Rate Limiting An Express App",
             "summary": "How to conduct a per-user rate limit on an Express-powered API? Well there is a naive solution, and there\nis a more elegant one which requires thinking in streams and reactive programming.",
             "image": "https://images.unsplash.com/photo-1523286575777-21af045abec8?w=1993&h=600&fit=crop",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
+            "date_modified": "2020-07-16T19:57:02.000Z",
+            "date_published": "2020-07-16T19:57:02.000Z",
             "author": {
                 "name": "Eugene Ghanizadeh Khoub"
             }
@@ -62,8 +37,8 @@
             "title": "Eugene's Coding Blog | Error Handling in RxJS",
             "summary": "A deep-dive in error-handling in RxJS, its solutions, pitfalls, etc.",
             "image": "https://images.unsplash.com/photo-1553969914-e109f9d0e171?w=1993&h=600&fit=crop&q=80",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
+            "date_modified": "2020-07-16T19:57:02.000Z",
+            "date_published": "2020-07-16T19:57:02.000Z",
             "author": {
                 "name": "Eugene Ghanizadeh Khoub"
             }
@@ -75,8 +50,8 @@
             "title": "Eugene's Coding Blog | How RxJS groupBy() Works",
             "summary": "RxJS groupBy() operator is a useful but nuanced tool. In last post we used it to\neasily and descriptively rate-limit an API, here we will dig more into its specification\nin the context of same example.",
             "image": "https://images.unsplash.com/photo-1516640710924-c982f6b6ff2a?w=1993&h=600&fit=crop",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
+            "date_modified": "2020-07-16T19:57:02.000Z",
+            "date_published": "2020-07-16T19:57:02.000Z",
             "author": {
                 "name": "Eugene Ghanizadeh Khoub"
             }
@@ -88,8 +63,8 @@
             "title": "Eugene's Coding Blog | Why Medium Doesn't Work for Programmers",
             "summary": "Why Medium isn't a proper place for programming blogs and articles anymore.",
             "image": "https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?w=1993&h=600&fit=crop&crop=bottom",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
+            "date_modified": "2020-07-16T19:57:02.000Z",
+            "date_published": "2020-07-16T19:57:02.000Z",
             "author": {
                 "name": "Eugene Ghanizadeh Khoub"
             }
@@ -101,8 +76,8 @@
             "title": "Part 1: Why?",
             "summary": "Short-comings of React and other frontend frameworks, i.e. why CONNECTIVE HTML was created.",
             "image": "https://images.unsplash.com/photo-1518016491499-75f85ea4c86d?w=1993&h=600&fit=crop",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
+            "date_modified": "2020-07-16T19:57:02.000Z",
+            "date_published": "2020-07-16T19:57:02.000Z",
             "author": {
                 "name": "Eugene Ghanizadeh Khoub"
             }
@@ -114,8 +89,8 @@
             "title": "Part 2: JSX",
             "summary": "Templating vs JSX, which one is the best option for our frontend framework?",
             "image": "https://images.unsplash.com/photo-1560075370-f3a7718a5e75?w=1993&h=600&fit=crop",
-            "date_modified": "2020-06-22T20:25:30.000Z",
-            "date_published": "2020-06-22T20:25:30.000Z",
+            "date_modified": "2020-07-16T19:57:02.000Z",
+            "date_published": "2020-07-16T19:57:02.000Z",
             "author": {
                 "name": "Eugene Ghanizadeh Khoub"
             }
