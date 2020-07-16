@@ -36,12 +36,12 @@ export const theme = /*#__PURE__*/createTheme({
     light: {
       shadow: '',
       background: '#202040',
-      lineHightlight: '#363062'
+      lineHighlight: '#363062'
     },
     dark: {
       shadow: '',
       background: '#202040',
-      lineHightlight: '#363062'
+      lineHighlight: '#363062'
     }
   }
 });
