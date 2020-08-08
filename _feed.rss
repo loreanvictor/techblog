@@ -4,7 +4,7 @@
         <title>Eugene's Coding Blog</title>
         <link>https://eugene.coding.blog/techblog</link>
         <description></description>
-        <lastBuildDate>Thu, 16 Jul 2020 19:58:25 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Aug 2020 09:29:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <atom:link href="https://eugene.coding.blog/_feed.rss" rel="self" type="application/rss+xml"/>
@@ -12,74 +12,74 @@
             <title><![CDATA[Eugene's Coding Blog | Diversity is NOT a progressive value. Its a rational one.]]></title>
             <link>https://eugene.coding.blog/techblog/diversity-is-not-a-progressive-value</link>
             <guid>https://eugene.coding.blog/techblog/diversity-is-not-a-progressive-value</guid>
-            <pubDate>Thu, 16 Jul 2020 19:57:02 GMT</pubDate>
+            <pubDate>Sat, 08 Aug 2020 09:28:06 GMT</pubDate>
             <description><![CDATA[Diversity is portrayed as a progressive value, as if it is something that requires good intentions
 to be promoted. It is not. A lack of it, however, is merely stupid and short-sighted.]]></description>
             <content:encoded><![CDATA[Diversity is NOT a progressive value. Its a rational one. ...]]></content:encoded>
-            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh Khoub)</author>
+            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
             <enclosure url="https://images.unsplash.com/photo-1587642303371-96accbf47448?w=1993&h=600&fit=crop&crop=bottom" length="0" type="image//photo-1587642303371-96accbf47448"/>
         </item>
         <item>
             <title><![CDATA[Eugene's Coding Blog | Rate Limiting An Express App]]></title>
             <link>https://eugene.coding.blog/techblog/rate-limiting-an-express-app</link>
             <guid>https://eugene.coding.blog/techblog/rate-limiting-an-express-app</guid>
-            <pubDate>Thu, 16 Jul 2020 19:57:02 GMT</pubDate>
+            <pubDate>Sat, 08 Aug 2020 09:28:06 GMT</pubDate>
             <description><![CDATA[How to conduct a per-user rate limit on an Express-powered API? Well there is a naive solution, and there
 is a more elegant one which requires thinking in streams and reactive programming.]]></description>
             <content:encoded><![CDATA[Rate Limiting An Express App ...]]></content:encoded>
-            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh Khoub)</author>
+            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
             <enclosure url="https://images.unsplash.com/photo-1523286575777-21af045abec8?w=1993&h=600&fit=crop" length="0" type="image//photo-1523286575777-21af045abec8"/>
         </item>
         <item>
             <title><![CDATA[Eugene's Coding Blog | Error Handling in RxJS]]></title>
             <link>https://eugene.coding.blog/techblog/rxjs-error-handling</link>
             <guid>https://eugene.coding.blog/techblog/rxjs-error-handling</guid>
-            <pubDate>Thu, 16 Jul 2020 19:57:02 GMT</pubDate>
+            <pubDate>Sat, 08 Aug 2020 09:28:06 GMT</pubDate>
             <description><![CDATA[A deep-dive in error-handling in RxJS, its solutions, pitfalls, etc.]]></description>
             <content:encoded><![CDATA[Error Handling in RxJS ...]]></content:encoded>
-            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh Khoub)</author>
+            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
             <enclosure url="https://images.unsplash.com/photo-1553969914-e109f9d0e171?w=1993&h=600&fit=crop&q=80" length="0" type="image//photo-1553969914-e109f9d0e171"/>
         </item>
         <item>
             <title><![CDATA[Eugene's Coding Blog | How RxJS groupBy() Works]]></title>
             <link>https://eugene.coding.blog/techblog/rxjs-group-by</link>
             <guid>https://eugene.coding.blog/techblog/rxjs-group-by</guid>
-            <pubDate>Thu, 16 Jul 2020 19:57:02 GMT</pubDate>
+            <pubDate>Sat, 08 Aug 2020 09:28:06 GMT</pubDate>
             <description><![CDATA[RxJS groupBy() operator is a useful but nuanced tool. In last post we used it to
 easily and descriptively rate-limit an API, here we will dig more into its specification
 in the context of same example.]]></description>
             <content:encoded><![CDATA[How RxJS groupBy() Works ...]]></content:encoded>
-            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh Khoub)</author>
+            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
             <enclosure url="https://images.unsplash.com/photo-1516640710924-c982f6b6ff2a?w=1993&h=600&fit=crop" length="0" type="image//photo-1516640710924-c982f6b6ff2a"/>
         </item>
         <item>
             <title><![CDATA[Eugene's Coding Blog | Why Medium Doesn't Work for Programmers]]></title>
             <link>https://eugene.coding.blog/techblog/why-medium-doesnt-work-for-programmers</link>
             <guid>https://eugene.coding.blog/techblog/why-medium-doesnt-work-for-programmers</guid>
-            <pubDate>Thu, 16 Jul 2020 19:57:02 GMT</pubDate>
+            <pubDate>Sat, 08 Aug 2020 09:28:06 GMT</pubDate>
             <description><![CDATA[Why Medium isn't a proper place for programming blogs and articles anymore.]]></description>
             <content:encoded><![CDATA[Why Medium Doesn't Work for Programmers ...]]></content:encoded>
-            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh Khoub)</author>
+            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
             <enclosure url="https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?w=1993&h=600&fit=crop&crop=bottom" length="0" type="image//photo-1489844097929-c8d5b91c456e"/>
         </item>
         <item>
             <title><![CDATA[Part 1: Why?]]></title>
             <link>https://eugene.coding.blog/techblog/yaff/part1</link>
             <guid>https://eugene.coding.blog/techblog/yaff/part1</guid>
-            <pubDate>Thu, 16 Jul 2020 19:57:02 GMT</pubDate>
+            <pubDate>Sat, 08 Aug 2020 09:28:06 GMT</pubDate>
             <description><![CDATA[Short-comings of React and other frontend frameworks, i.e. why CONNECTIVE HTML was created.]]></description>
             <content:encoded><![CDATA[Part 1: Why? ...]]></content:encoded>
-            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh Khoub)</author>
+            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
             <enclosure url="https://images.unsplash.com/photo-1518016491499-75f85ea4c86d?w=1993&h=600&fit=crop" length="0" type="image//photo-1518016491499-75f85ea4c86d"/>
         </item>
         <item>
             <title><![CDATA[Part 2: JSX]]></title>
             <link>https://eugene.coding.blog/techblog/yaff/part2</link>
             <guid>https://eugene.coding.blog/techblog/yaff/part2</guid>
-            <pubDate>Thu, 16 Jul 2020 19:57:02 GMT</pubDate>
+            <pubDate>Sat, 08 Aug 2020 09:28:06 GMT</pubDate>
             <description><![CDATA[Templating vs JSX, which one is the best option for our frontend framework?]]></description>
             <content:encoded><![CDATA[Part 2: JSX ...]]></content:encoded>
-            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh Khoub)</author>
+            <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
             <enclosure url="https://images.unsplash.com/photo-1560075370-f3a7718a5e75?w=1993&h=600&fit=crop" length="0" type="image//photo-1560075370-f3a7718a5e75"/>
         </item>
     </channel>
