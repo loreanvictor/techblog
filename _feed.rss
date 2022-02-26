@@ -4,7 +4,7 @@
         <title>Eugene's Coding Blog</title>
         <link>https://eugene.coding.blog/techblog</link>
         <description></description>
-        <lastBuildDate>Wed, 30 Jun 2021 06:42:39 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 26 Feb 2022 08:55:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <atom:link href="https://eugene.coding.blog/_feed.rss" rel="self" type="application/rss+xml"/>
@@ -12,7 +12,7 @@
             <title><![CDATA[Eugene's Coding Blog | Diversity is NOT a progressive value. Its a rational one.]]></title>
             <link>https://eugene.coding.blog/techblog/diversity-is-not-a-progressive-value</link>
             <guid>https://eugene.coding.blog/techblog/diversity-is-not-a-progressive-value</guid>
-            <pubDate>Wed, 30 Jun 2021 06:41:35 GMT</pubDate>
+            <pubDate>Sat, 26 Feb 2022 08:53:54 GMT</pubDate>
             <description><![CDATA[Diversity is portrayed as a progressive value, as if it is something that requires good intentions
 to be promoted. It is not. A lack of it, however, is merely stupid and short-sighted.]]></description>
             <content:encoded><![CDATA[Diversity is NOT a progressive value. Its a rational one. ...]]></content:encoded>
@@ -23,7 +23,7 @@ to be promoted. It is not. A lack of it, however, is merely stupid and short-sig
             <title><![CDATA[Eugene's Coding Blog | Rate Limiting An Express App]]></title>
             <link>https://eugene.coding.blog/techblog/rate-limiting-an-express-app</link>
             <guid>https://eugene.coding.blog/techblog/rate-limiting-an-express-app</guid>
-            <pubDate>Wed, 30 Jun 2021 06:41:35 GMT</pubDate>
+            <pubDate>Sat, 26 Feb 2022 08:53:54 GMT</pubDate>
             <description><![CDATA[How to conduct a per-user rate limit on an Express-powered API? Well there is a naive solution, and there
 is a more elegant one which requires thinking in streams and reactive programming.]]></description>
             <content:encoded><![CDATA[Rate Limiting An Express App ...]]></content:encoded>
@@ -34,7 +34,7 @@ is a more elegant one which requires thinking in streams and reactive programmin
             <title><![CDATA[Eugene's Coding Blog | Error Handling in RxJS]]></title>
             <link>https://eugene.coding.blog/techblog/rxjs-error-handling</link>
             <guid>https://eugene.coding.blog/techblog/rxjs-error-handling</guid>
-            <pubDate>Wed, 30 Jun 2021 06:41:35 GMT</pubDate>
+            <pubDate>Sat, 26 Feb 2022 08:53:54 GMT</pubDate>
             <description><![CDATA[A deep-dive in error-handling in RxJS, its solutions, pitfalls, etc.]]></description>
             <content:encoded><![CDATA[Error Handling in RxJS ...]]></content:encoded>
             <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
@@ -44,7 +44,7 @@ is a more elegant one which requires thinking in streams and reactive programmin
             <title><![CDATA[Eugene's Coding Blog | How RxJS groupBy() Works]]></title>
             <link>https://eugene.coding.blog/techblog/rxjs-group-by</link>
             <guid>https://eugene.coding.blog/techblog/rxjs-group-by</guid>
-            <pubDate>Wed, 30 Jun 2021 06:41:35 GMT</pubDate>
+            <pubDate>Sat, 26 Feb 2022 08:53:54 GMT</pubDate>
             <description><![CDATA[RxJS groupBy() operator is a useful but nuanced tool. In last post we used it to
 easily and descriptively rate-limit an API, here we will dig more into its specification
 in the context of same example.]]></description>
@@ -56,7 +56,7 @@ in the context of same example.]]></description>
             <title><![CDATA[Eugene's Coding Blog | Why Medium Doesn't Work for Programmers]]></title>
             <link>https://eugene.coding.blog/techblog/why-medium-doesnt-work-for-programmers</link>
             <guid>https://eugene.coding.blog/techblog/why-medium-doesnt-work-for-programmers</guid>
-            <pubDate>Wed, 30 Jun 2021 06:41:35 GMT</pubDate>
+            <pubDate>Sat, 26 Feb 2022 08:53:54 GMT</pubDate>
             <description><![CDATA[Why Medium isn't a proper place for programming blogs and articles anymore.]]></description>
             <content:encoded><![CDATA[Why Medium Doesn't Work for Programmers ...]]></content:encoded>
             <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
@@ -66,7 +66,7 @@ in the context of same example.]]></description>
             <title><![CDATA[Part 1: Why?]]></title>
             <link>https://eugene.coding.blog/techblog/yaff/part1</link>
             <guid>https://eugene.coding.blog/techblog/yaff/part1</guid>
-            <pubDate>Wed, 30 Jun 2021 06:41:35 GMT</pubDate>
+            <pubDate>Sat, 26 Feb 2022 08:53:54 GMT</pubDate>
             <description><![CDATA[Short-comings of React and other frontend frameworks, i.e. why CONNECTIVE HTML was created.]]></description>
             <content:encoded><![CDATA[Part 1: Why? ...]]></content:encoded>
             <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
@@ -76,7 +76,7 @@ in the context of same example.]]></description>
             <title><![CDATA[Part 2: JSX]]></title>
             <link>https://eugene.coding.blog/techblog/yaff/part2</link>
             <guid>https://eugene.coding.blog/techblog/yaff/part2</guid>
-            <pubDate>Wed, 30 Jun 2021 06:41:35 GMT</pubDate>
+            <pubDate>Sat, 26 Feb 2022 08:53:54 GMT</pubDate>
             <description><![CDATA[Templating vs JSX, which one is the best option for our frontend framework?]]></description>
             <content:encoded><![CDATA[Part 2: JSX ...]]></content:encoded>
             <author>ghanizadeh.eugene@gmail.com (Eugene Ghanizadeh)</author>
