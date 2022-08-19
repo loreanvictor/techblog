@@ -11,7 +11,6 @@ export const config = /*#__PURE__*/configuration({
     base: 'posts'
   },
   dest: {
-    namespace: '/techblog',
     html: 'dist',
     assets: process.env.GITHUB_BUILD === 'true' ? 'dist' : '.',
     bundle: process.env.GITHUB_BUILD === 'true' ? 'bundle' : 'dist/bundle',
