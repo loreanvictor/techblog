@@ -12,9 +12,9 @@ export const config = /*#__PURE__*/configuration({
   },
   dest: {
     html: 'dist',
-    assets: process.env.GITHUB_BUILD === 'true' ? 'dist' : '.',
-    bundle: process.env.GITHUB_BUILD === 'true' ? 'bundle' : 'dist/bundle',
-    styles: process.env.GITHUB_BUILD === 'true' ? 'styles' : 'dist/styles',
+    assets: '.',
+    bundle: 'bundle',
+    styles: 'styles',
   },
   page: {
     title: {
