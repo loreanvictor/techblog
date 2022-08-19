@@ -23,8 +23,8 @@ jobs:
           cp -r img/ dist/img/
           # mark no jekyll
           touch dist/.nojekyll
-        env:
-          GITHUB_BUILD: true
+     #   env:
+     #     GITHUB_BUILD: true
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
